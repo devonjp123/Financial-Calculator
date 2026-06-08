@@ -91,7 +91,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-6 p-4 bg-yellow-200 rounded">
-          <div className="text-center">
+          <div className="text-center text-black font-semibold text-sm uppercase mb-1">
         </div>
 
           <h2 className="text-lg text-gray-600">
