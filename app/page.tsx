@@ -51,43 +51,43 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 items-start w-full">
         <div className="space-y-4">
           <div>
-            <label className="block font-semibold mb-1">Starting Investment</label> 
+            <label className="block font-semibold text-gray-700 mb-1">Starting Investment</label> 
               <input
                 type="number"
                 value={initialAmount}
                 onFocus={(e) => e.target.select()}
                 onChange={(e) => setInitialAmount(Number(e.target.value) || 0)}
-                className="w-full p-2 border-2 border-gray-400 rounded"
+                className="w-full p-3 border border-gray-300 rounded-lg text-black"
               />
           </div>
           <div>
-            <label className="block">Monthly Contribution:</label>
+            <label className="block font-semibold text-gray-700 mb-1">Monthly Contribution:</label>
             <input
               type="number"
               value={monthlyContribution}
               onFocus={(e) => e.target.select()}
               onChange={(e) => setMonthlyContribution(Number(e.target.value) || 0)}
-              className="w-full p-2 border-2 border-gray-400 rounded"
+              className="w-full p-3 border border-gray-300 rounded-lg text-black"
             />
           </div>
           <div>
-            <label className="block">Expected Annual Return (%):</label>
+            <label className="block font-semibold text-gray-700 mb-1">Expected Annual Return (%):</label>
             <input
               type="number"
               value={annualInterest}
               onFocus={(e) => e.target.select()}
               onChange={(e) => setAnnualInterest(Number(e.target.value) || 0)}
-              className="w-full p-2 border-2 border-gray-400 rounded"
+              className="w-full p-3 border border-gray-300 rounded-lg text-black"
             />
           </div>
           <div>
-            <label className="block">Years Invested:</label>
+            <label className="block font-semibold text-gray-700 mb-1">Years Invested:</label>
             <input
               type="number"
               value={years}
               onFocus={(e) => e.target.select()}
               onChange={(e) => setYears(Number(e.target.value) || 0)}
-              className="w-full p-2 border-2 border-gray-400 rounded"
+              className="w-full p-3 border border-gray-300 rounded-lg text-black"
             />
           </div>
           <div className="mt-6 p-4 bg-yellow-200 rounded">
