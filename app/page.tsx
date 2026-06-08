@@ -41,7 +41,7 @@ export default function Home() {
 });
 
   return (
-    <main className="min-h-screen p-8 w-full">
+    <main className="min-h-screen p-8 w-full bg-white">
      <div className="bg-blue-400 text-white p-6 rounded-lg mb-6">
      <h1 className="text-5xl text-center text-black font-bold">Investment Calculator</h1>
       <p className="text-xl text-center text-gray-800 mt-2">
@@ -112,7 +112,13 @@ export default function Home() {
         </h2>
 
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={chartData}>
+          <LineChart data={chartData}
+            margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 40,
+          }}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
           <YAxis
