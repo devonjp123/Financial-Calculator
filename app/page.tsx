@@ -52,13 +52,13 @@ export default function Home() {
         <div className="space-y-4">
           <div>
             <label className="block font-semibold mb-1">Starting Investment</label> 
-          <input
-            type="number"
-            value={initialAmount}
-            onFocus={(e) => e.target.select()}
-            onChange={(e) => setInitialAmount(Number(e.target.value) || 0)}
-            className="w-full p-2 border rounded"
-            />
+              <input
+                type="number"
+                value={initialAmount}
+                onFocus={(e) => e.target.select()}
+                onChange={(e) => setInitialAmount(Number(e.target.value) || 0)}
+                className="w-full p-2 border-2 border-gray-400 rounded"
+              />
           </div>
           <div>
             <label className="block">Monthly Contribution:</label>
@@ -67,7 +67,7 @@ export default function Home() {
               value={monthlyContribution}
               onFocus={(e) => e.target.select()}
               onChange={(e) => setMonthlyContribution(Number(e.target.value) || 0)}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border-2 border-gray-400 rounded"
             />
           </div>
           <div>
@@ -77,7 +77,7 @@ export default function Home() {
               value={annualInterest}
               onFocus={(e) => e.target.select()}
               onChange={(e) => setAnnualInterest(Number(e.target.value) || 0)}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border-2 border-gray-400 rounded"
             />
           </div>
           <div>
@@ -87,7 +87,7 @@ export default function Home() {
               value={years}
               onFocus={(e) => e.target.select()}
               onChange={(e) => setYears(Number(e.target.value) || 0)}
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border-2 border-gray-400 rounded"
             />
           </div>
           <div className="mt-6 p-4 bg-yellow-200 rounded">
@@ -106,7 +106,7 @@ export default function Home() {
           </p>
         </div>
         </div>
-        <div className="mt-8 h-80 p-4 bg-white border rounded">
+        <div className="mt-8 h-80 p-4 bg-white border-2 border-gray-400 rounded">
         <h2 className="text-xl font-bold text-black mb-4">
           Projected Growth
         </h2>
