@@ -98,7 +98,7 @@ export default function Home() {
             Future Portfolio Value
           </h2>
 
-          <p className="text-5xl font-bold mt-2">
+          <p className="text-5xl font-bold text-black mt-2">
             $
             {Math.round(
             Number(calculateFutureValue())
@@ -107,7 +107,7 @@ export default function Home() {
         </div>
         </div>
         <div className="mt-8 h-80 p-4 bg-white border rounded">
-        <h2 className="text-xl font-bold mb-4">
+        <h2 className="text-xl font-bold text-black mb-4">
           Projected Growth
         </h2>
 
